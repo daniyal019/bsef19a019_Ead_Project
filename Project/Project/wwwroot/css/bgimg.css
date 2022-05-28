@@ -1,0 +1,6 @@
+﻿body {
+    background-image: url("/intro.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

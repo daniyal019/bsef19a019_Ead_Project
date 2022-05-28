@@ -1,0 +1,55 @@
+﻿body {
+    background-image: url("/intro.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+    input:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+#submission {
+    margin-left: 400px;
+    width: 25%;
+}
+
+#div1 {
+    padding: 16px;
+}
+
+#SignUp1 {
+    margin-left: 400px;
+}
+

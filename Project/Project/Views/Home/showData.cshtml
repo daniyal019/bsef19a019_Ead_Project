@@ -1,0 +1,44 @@
+﻿@model List<Project.Models.Customer>
+@{
+    ViewData["Title"] = "showData";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/show.css" asp-append-version="true" />
+  
+</head>
+<body>
+    <center>
+        <table border="1" id="tab">
+            <thead>
+                <tr>
+                    <th>ID   </th>
+                    <th>UserName   </th>
+                    <th>Password   </th>
+                    <th>Email  </th>
+                    <th>Full Name  </th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (Project.Models.Customer custom in Model)
+                {
+
+                    <tr>
+                        <td>   @custom.id       </td>
+                        <td>   @custom.username       </td>
+                        <td>   @custom.password       </td>
+                        <td>   @custom.email       </td>
+                        <td>   @custom.fullName      </td>
+                    </tr>
+
+                }
+
+
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>

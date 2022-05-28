@@ -1,0 +1,41 @@
+﻿@model Customer
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/Contact.css" asp-append-version="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+    <center>
+        <h3>Contact Form</h3>
+    </center>
+    <div class="div1">
+
+
+        <form method="post" action="/Contact/Contact" id="form3">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div id=" inputContainer">
+                <input asp-for="contactName" placeholder="Enter your Name" /><br />
+                <span asp-validation-for="contactName"></span>
+            </div>
+            <div id=" inputContainer">
+                <input asp-for="contactEmail" placeholder="Enter your Email" /><br />
+                <span asp-validation-for="contactEmail"></span>
+            </div>
+            <div id=" inputContainer">
+                <input asp-for="feedback" placeholder="Enter your Feedback" /><br />
+                <span asp-validation-for="feedback"></span>
+            </div>
+
+            <div class="clearfix">
+                <button type="submit" value="Sign up" id="submission" />Send FeedBack<br />
+            </div>
+        </form>
+    </div>
+    <partial name="_header" />
+
+</body>
+</html>

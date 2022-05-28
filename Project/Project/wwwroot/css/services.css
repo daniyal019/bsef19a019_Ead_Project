@@ -1,0 +1,54 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("/ok.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.gallery {
+    margin: 34px;
+    float: left;
+    width: 230px;
+    margin-bottom: 200px;
+}
+
+div.gallery1 {
+    margin: 34px;
+    float: left;
+    width: 230px;
+    margin-bottom: 400px;
+    margin-top: -150px;
+}
+    /*
+        div.gallery1:hover {
+            border: 1px solid #777;
+        }*/
+
+    div.gallery1 img {
+        width: 100%;
+        height: auto;
+    }
+/* div.gallery:hover {
+                border: 1px solid #777;
+            }*/
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+  
+}
+
+div.desc {
+    padding: 25px;
+    text-align: center;
+    font-family: 'Brush Script MT';
+    font-size:30px;
+        
+}
+#h1 {
+    font-family: 'Brush Script MT';
+    font-size: 30px;
+}
+#margin {
+    margin-bottom: 200px;
+}

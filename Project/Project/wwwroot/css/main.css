@@ -1,0 +1,25 @@
+﻿body {
+    background-image: url("/intro.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.danger {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+    .danger:hover {
+        background-color: green;
+        color: #FFFFFF;
+    }
+
+.clickme {
+    margin-left: 500px;
+    background-color: black;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}

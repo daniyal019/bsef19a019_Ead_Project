@@ -1,0 +1,42 @@
+﻿@model Customer
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="~/css/SignUp.css" asp-append-version="true" />
+    
+
+        <title>Sign Up Page</title>
+
+    </head>
+    <body>s
+
+
+        <div id="div1">
+
+            <h3 id="SignUp1">Sign Up to our Services</h3>
+            <form style="margin-bottom:300px" method="post" action="/SignUp/SignUp" id="form2">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div id=" inputContainer">
+                    <input asp-for="fullName" placeholder="FullName" /><br />
+                    <span asp-validation-for="fullName"></span>
+                </div>
+                <div id=" inputContainer">
+                    <input asp-for="email" placeholder="Email" /><br />
+                    <span asp-validation-for="email"></span>
+                </div>
+                <div id=" inputContainer">
+                    <input asp-for="username" placeholder="Username" /><br />
+                    <span asp-validation-for="username"></span>
+                </div>
+                <div id=" inputContainer">
+                    <input asp-for="password" placeholder="Password" /><br />
+                    <span asp-validation-for="password"></span>
+                </div>
+                <div class="clearfix">
+                    <button type="submit" value="Sign up" id="submission" />SignUp<br />
+                </div>
+            </form>
+        </div>
+        <partial name="_header" />
+    </body>
+</html>

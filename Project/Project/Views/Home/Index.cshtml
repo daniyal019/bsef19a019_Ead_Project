@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="text-center">
+
+
+        @section sec
+    {
+            <center>
+                <h1 style=" font-family: 'Brush Script MT', cursive" class="head">Welcome to Landscaping Services</h1>
+
+            </center>
+        }
+
+
+
+
+    </div>
+
+    <a href="/home/showData" class="clickme danger">Summary</a>
+    <img style="width:60% ;margin-bottom:300px;margin-top:20px;margin-left:200px" src="~/main.jpg"></img>
+
+    <partial name="_header" />
+</body>
+  
+</html>
