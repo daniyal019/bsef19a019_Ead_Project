@@ -148,3 +148,8 @@ C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\orderServi
 C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\Shared\_Options.cshtml.g.cs
 C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\orderService\order_done.cshtml.g.cs
 C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\ServiceProvider\houseCare.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\ServiceProvider\treesCare.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\ServiceProvider\gardenCare.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\ServiceProvider\forestCare.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\ServiceProvider\fieldCare.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\ServiceProvider\flowersCare.cshtml.g.cs
