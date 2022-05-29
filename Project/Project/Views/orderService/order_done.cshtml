@@ -1,0 +1,48 @@
+﻿@model Customer
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/orderService.css" asp-append-version="true" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Service</title>
+
+</head>
+<body>
+
+
+    <div id="login">
+
+        <h3 style="margin-left:35px">Book Our Service Now</h3>
+        <form method="post" action="/orderService/order">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div>
+                <input asp-for="orderfname" placeholder="First Name" /><br />
+                <span asp-validation-for="orderfname"></span>
+            </div>
+            <div>
+                <input asp-for="orderlname" placeholder="Last Name" /><br />
+                <span asp-validation-for="orderlname"></span>
+            </div>
+            <div>
+                <input asp-for="orderemail" placeholder="Email" /><br />
+                <span asp-validation-for="orderemail"></span>
+            </div>
+            <div>
+                <input asp-for="date" placeholder="Date" /><br />
+                <span asp-validation-for="date"></span>
+            </div>
+            <label for="ChooseService" style="font-size: 1.25rem; margin-left: 2.1875rem">Choose a Service:</label>
+            <partial name="_Options" />
+            <br>
+            <input type="submit" value="Book Now" id="submit" />
+
+
+        </form>
+        <div><center><p style="color:red">Booking Confirmed</p></center></div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <partial name="_header" />
+</body>
+</html>

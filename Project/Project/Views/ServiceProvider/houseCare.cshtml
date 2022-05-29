@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @*<link rel="stylesheet" href="~/css/orderService.css" asp-append-version="true" />*@
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>houseCare</title>
+    <style>
+        #h1 {
+            font-size: 30px;
+            margin-left:60px;
+            text-align: center;
+            text-decoration-color: yellowgreen;
+        }
+        body {
+         
+        }
+        * {
+            box-sizing: border-box;
+          
+        }
+
+        .column {
+            margin-left:180px;
+            float: left;
+            width: 50%;
+            padding: 0 10px;
+        }
+
+        #cardheading {
+            text: bold;
+            font: 25px;
+            background-color: white;
+        }
+
+        th, td {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            padding-right: 40px;
+        }
+
+
+        .row {
+            margin: 0 -5px;
+            margin-left: 150px;
+        }
+
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+@*@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }*@
+}
+    </style>
+</head>
+<body>
+    <h4 id="h1">
+        House Care</h1>
+        <center>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img id="newimg" src="~/small.jpg">
+                        <h3 id="cardheading">House Care</h3>
+                        <p>
+                            <table>
+                                <tr>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>Residential landscaping can be defined as the art and the practice of improving the appearance and aesthetic appeal of the area surrounding a home. Each home and its landscape should be a reflection of the people who live there. It represents a visitor’s first impression of the home and its inhabitants.</td>
+                                </tr>
+
+                            </table>
+                            <a style="color:black;border:1px solid black" href="/orderService/order">
+                                Book Now
+                            </a>
+                        </p>
+
+
+                        </p>
+                    </div>
+                </div>
+        </center>
+        <br>     <br>     <br>     <br>     <br>     <br>     <br>     <br>     <br>     <br>     <br>     <br>
+        <partial name="_header" />
+</body>
+</html>

@@ -7,7 +7,23 @@ namespace Project.Models
 {
     public class CustomerData
     {
+        public bool AddOrder(Customer customer)
+        {
 
+            string con = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Project;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            SqlConnection conn = new SqlConnection(con);
+            conn.Open();
+            string query = $"Insert into booking (date,fname,lname,orderemail) values('{customer.date}','{customer.orderfname}','{customer.orderlname}','{customer.orderemail}')";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int rows = cmd.ExecuteNonQuery();
+            if (rows >= 1)
+            {
+                return true;
+            }
+
+
+            else return false;
+        }
         public bool Add(Customer customer)
         {
             
@@ -25,6 +41,26 @@ namespace Project.Models
 
             else return false;
         }
+
+
+        public bool AddContact(Customer customer)
+        {
+
+            string con = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Project;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            SqlConnection conn = new SqlConnection(con);
+            conn.Open();
+            string query = $"Insert into contact (name,email,feedback) values('{customer.contactName}','{customer.contactEmail}','{customer.feedback}')";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int rows = cmd.ExecuteNonQuery();
+            if (rows >= 1)
+            {
+                return true;
+            }
+
+
+            else return false;
+        }
+
         public List<Customer>Customers()
         {
             List<Customer> list = new List<Customer>();
@@ -67,6 +103,23 @@ namespace Project.Models
                 return false;
             }
         }
+        public bool findorder(Customer custom)
+        {
+            string con = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Project;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            SqlConnection conn = new SqlConnection(con);
+            conn.Open();
+            string query = $"Select * from booking ";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
 
+            if (dr.HasRows)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

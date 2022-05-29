@@ -1,8 +1,9 @@
 ﻿#submit1:link {
     color: red;
 }
+
 body {
-    background-image: url("/intro.jpg");
+    background-image: url("/m.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,13 +41,13 @@ body {
 
 #login {
     padding: 1rem;
-    margin-left: 20.625rem;
+    margin-left: 20.62rem;
 }
 
 input {
     width: 50%;
     padding: 0.9375rem;
-    margin: 0.3125rem 0rem 1.375rem 0rem;
+    margin: 0.3125rem 0 1.375rem 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -59,8 +60,8 @@ input {
 
 #submit1 {
     width: 50%;
-    padding: 1rem;
-    margin: 0.3125rem 0rem 1.375rem 0rem;
+    padding: 0.5rem;
+    margin: 0.3125rem 0 1.375rem 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;

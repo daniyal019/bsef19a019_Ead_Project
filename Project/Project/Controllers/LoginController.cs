@@ -20,17 +20,26 @@ namespace Project.Controllers
         {
             CustomerData custom = new CustomerData();
 
-          
-                if (custom.find(user) == true)
-                {
+            //if (ModelState.IsValid)
+            //{
+            if (custom.find(user) == true)
+
+            {
                     return (View("Views/Home/Index.cshtml"));
                 }
+
                 else
                 {
-
                     return (View("Views/Login/LoginFail.cshtml"));
                 }
-           
+            //}
+            //else
+            //{
+            //    return View();
+            //}
         }
+
+
+
     }
-}
+    }

@@ -144,3 +144,7 @@ C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\Shared\_Se
 C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\Shared\_header.cshtml.g.cs
 C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\About\AboutUs.cshtml.g.cs
 C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\Login\LoginFail.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\orderService\order.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\Shared\_Options.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\orderService\order_done.cshtml.g.cs
+C:\Users\Hp\source\repos\Project\Project\obj\Debug\net5.0\Razor\Views\ServiceProvider\houseCare.cshtml.g.cs

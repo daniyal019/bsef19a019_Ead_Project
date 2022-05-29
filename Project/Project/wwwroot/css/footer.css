@@ -1,6 +1,6 @@
 ﻿* {
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: border-box;
 }
 
@@ -11,15 +11,15 @@ body {
 
 
 footer {
-    margin-top: 230px;
+    margin-top: 14.375rem;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
     background: #111;
     height: 30%;
     width: 100vw;
-    padding-top: 40px;
+    padding-top: 2.5rem;
     color: #fff;
 }
 
@@ -39,10 +39,10 @@ footer {
     }
 
     .footer-content p {
-        max-width: 500px;
-        margin: 10px auto;
-        line-height: 28px;
-        font-size: 14px;
+        max-width: 31.25rem;
+        margin: 0.625rem auto;
+        line-height: 1.75rem;
+        font-size: 0.875rem;
         color: #cacdd2;
     }
 
@@ -55,20 +55,20 @@ footer {
 }
 
     .socials li {
-        margin: 0 10px;
+        margin: 0rem 0.625rem;
     }
 
     .socials a {
         text-decoration: none;
         color: #fff;
-        border: 1.1px solid white;
-        padding: 5px;
+        border: 0.0688rem solid white;
+        padding: 0.3125rem;
         border-radius: 50%;
     }
 
         .socials a i {
             font-size: 1.1rem;
-            width: 20px;
+            width: 1.25rem;
             transition: color .4s ease;
         }
 
@@ -77,24 +77,24 @@ footer {
         }
 
 .footer-bottom {
-    margin-top: -40px;
+    margin-top: -2.5rem;
     background: #000;
     width: 100vw;
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 1.25rem;
+    padding-bottom: 2.5rem;
     text-align: center;
 }
 
     .footer-bottom p {
         float: left;
-        font-size: 14px;
-        word-spacing: 2px;
+        font-size: 0.875rem;
+        word-spacing: 0.125rem;
         text-transform: capitalize;
     }
 
         .footer-bottom p a {
-            color: #44bae8;
-            font-size: 16px;
+            color: white;
+            font-size: 1rem;
             text-decoration: none;
         }
 
@@ -113,16 +113,39 @@ footer {
     }
 
         .footer-menu ul li {
-            padding-right: 10px;
+            padding-right: 0.625rem;
             display: block;
         }
 
             .footer-menu ul li a {
-                color: #cfd2d6;
+                color: white;
                 text-decoration: none;
             }
 
                 .footer-menu ul li a:hover {
                     color: #27bcda; 
                 }
+}
+@media(max-width:576px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media(max-width:992px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 100%;
+    }
 }

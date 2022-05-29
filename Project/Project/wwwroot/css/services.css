@@ -6,18 +6,18 @@
     background-repeat: no-repeat;
 }
 div.gallery {
-    margin: 34px;
+    margin: 2.12rem;
     float: left;
-    width: 230px;
-    margin-bottom: 200px;
+    width: 14.375rem;
+    margin-bottom: 12.5rem;
 }
 
 div.gallery1 {
-    margin: 34px;
+    margin: 2.125rem;
     float: left;
-    width: 230px;
-    margin-bottom: 400px;
-    margin-top: -150px;
+    width: 14.375rem;
+    margin-bottom: 25rem;
+    margin-top: -9.375rem;
 }
     /*
         div.gallery1:hover {
@@ -39,16 +39,66 @@ div.gallery img {
 }
 
 div.desc {
-    padding: 25px;
+    padding: 1.5625rem;
     text-align: center;
     font-family: 'Brush Script MT';
-    font-size:30px;
-        
+    font-size: 1.875rem;
 }
 #h1 {
     font-family: 'Brush Script MT';
-    font-size: 30px;
+    font-size: 1.875rem;
+}
+.cl{
+  
 }
 #margin {
-    margin-bottom: 200px;
+    margin-bottom: 12.5rem;
+}
+
+.danger {
+    background-color: black;
+    color: #FFFFFF;
+
+}
+
+    .danger:hover {
+        background-color: green;
+        color: #FFFFFF;
+    }
+#mar {
+    margin-top: 75rem;
+    margin-right: 31.25rem;
+}
+
+.clickme {
+    background-color: black;
+    padding: 0.625rem 1.875rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1.875rem;
+    cursor: pointer;
+}
+
+@media(max-width:576px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media(max-width:992px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 100%;
+    }
 }

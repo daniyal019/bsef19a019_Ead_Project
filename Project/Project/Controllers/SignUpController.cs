@@ -17,25 +17,35 @@ namespace Project.Controllers
         [HttpPost]
         public ViewResult SignUp(Customer user)
         {
-            CustomerData custom= new CustomerData();
-          bool result=  custom.Add(user);
-            if (ModelState.IsValid)
-            {
-                if (result == true)
+            CustomerData custom = new CustomerData();
+
+            bool result = custom.Add(user);
+           //while(user.username!=null &&user.email!=null &&user.email!=null&&user.password!=null)
+           // {
+                if (ModelState.IsValid)
                 {
-                    return (View("Views/Home/Index.cshtml"));
+
+                    if (result == true)
+                    {
+                        return (View("Views/Home/Index.cshtml"));
+                    }
+                    else
+                    {
+                        return (View());
+                    }
                 }
-                else
-                {
-                    return (View());
-                }
-            }
+
             else
             {
-                return (View());
+                return View();
             }
-            
-       
         }
-    }
-}
+
+            //return (View());
+        }
+
+                
+
+
+        }
+    

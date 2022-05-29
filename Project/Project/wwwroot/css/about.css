@@ -6,7 +6,7 @@
 }
 h2 {
     font-family: 'Brush Script MT';
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 #s2 {
@@ -24,11 +24,34 @@ h2 {
     }
 
 .clickme {
-    margin-left: 460px;
+    margin-left: 28.75rem;
     background-color: black;
-    padding: 8px 20px;
+    padding: 0.5rem 1.25rem;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
+}
+@media(max-width:576px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media(max-width:992px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 100%;
+    }
 }

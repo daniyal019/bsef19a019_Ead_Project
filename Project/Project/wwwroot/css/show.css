@@ -12,8 +12,8 @@
 }
 
     #tab td, #customers th {
-        border: 1px solid #ddd;
-        padding: 8px;
+        border: 0.0625rem solid #ddd;
+        padding: 0.5rem;
     }
 
     #tab tr:nth-child(even) {
@@ -25,9 +25,32 @@
     }
 
     #tab th {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
         text-align: left;
         background-color: green;
         color: white;
     }
+@media(max-width:576px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media(max-width:992px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 100%;
+    }
+}

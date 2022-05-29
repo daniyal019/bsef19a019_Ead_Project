@@ -1,4 +1,7 @@
-﻿body {
+﻿html{
+    font-size:93%;
+}
+body {
     background-image: url("/intro.jpg");
     background-position: center;
     background-size: cover;
@@ -18,18 +21,18 @@ button:hover {
 button {
     background-color: #04AA6D;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 0.875rem 1.25rem;
+    margin: 0.5rem 0rem;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 1rem;
     opacity: 0.9;
 }
 
 input {
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    padding: 0.9375rem;
+    margin: 0.3125rem 0 1.375rem 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -41,15 +44,38 @@ input {
     }
 
 #submission {
-    margin-left: 400px;
+    margin-left: 25rem;
     width: 25%;
 }
 
 #div1 {
-    padding: 16px;
+    padding: 1rem;
 }
 
 #SignUp1 {
-    margin-left: 400px;
+    margin-left: 25rem;
 }
 
+@media(max-width:576px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media(max-width:992px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 100%;
+    }
+}
